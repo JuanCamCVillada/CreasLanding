@@ -53,7 +53,8 @@ svg.i{display:inline-block;vertical-align:middle;flex:none}
 @media (prefers-reduced-motion:no-preference){.btn{transition:transform .12s var(--ease),box-shadow .12s var(--ease)}}
 
 /* hero */
-.bp{background-image:linear-gradient(var(--grid-major) 1px,transparent 1px),linear-gradient(90deg,var(--grid-major) 1px,transparent 1px),linear-gradient(var(--grid-minor) 1px,transparent 1px),linear-gradient(90deg,var(--grid-minor) 1px,transparent 1px);background-size:64px 64px,64px 64px,8px 8px,8px 8px}
+.bp{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' shape-rendering='crispEdges' fill='%2300569E'%3E%3Cg fill-opacity='.05'%3E%3Crect x='0' width='1' height='64'/%3E%3Crect y='0' width='64' height='1'/%3E%3Crect x='8' width='1' height='64'/%3E%3Crect y='8' width='64' height='1'/%3E%3Crect x='16' width='1' height='64'/%3E%3Crect y='16' width='64' height='1'/%3E%3Crect x='24' width='1' height='64'/%3E%3Crect y='24' width='64' height='1'/%3E%3Crect x='32' width='1' height='64'/%3E%3Crect y='32' width='64' height='1'/%3E%3Crect x='40' width='1' height='64'/%3E%3Crect y='40' width='64' height='1'/%3E%3Crect x='48' width='1' height='64'/%3E%3Crect y='48' width='64' height='1'/%3E%3Crect x='56' width='1' height='64'/%3E%3Crect y='56' width='64' height='1'/%3E%3C/g%3E%3Cg fill-opacity='.10'%3E%3Crect width='1' height='64'/%3E%3Crect width='64' height='1'/%3E%3C/g%3E%3C/svg%3E");background-size:64px 64px}
+:root[data-theme="dark"] .bp{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' shape-rendering='crispEdges' fill='%2362CFFE'%3E%3Cg fill-opacity='.05'%3E%3Crect x='0' width='1' height='64'/%3E%3Crect y='0' width='64' height='1'/%3E%3Crect x='8' width='1' height='64'/%3E%3Crect y='8' width='64' height='1'/%3E%3Crect x='16' width='1' height='64'/%3E%3Crect y='16' width='64' height='1'/%3E%3Crect x='24' width='1' height='64'/%3E%3Crect y='24' width='64' height='1'/%3E%3Crect x='32' width='1' height='64'/%3E%3Crect y='32' width='64' height='1'/%3E%3Crect x='40' width='1' height='64'/%3E%3Crect y='40' width='64' height='1'/%3E%3Crect x='48' width='1' height='64'/%3E%3Crect y='48' width='64' height='1'/%3E%3Crect x='56' width='1' height='64'/%3E%3Crect y='56' width='64' height='1'/%3E%3C/g%3E%3Cg fill-opacity='.10'%3E%3Crect width='1' height='64'/%3E%3Crect width='64' height='1'/%3E%3C/g%3E%3C/svg%3E")}
 .hero{position:relative;border-bottom:1px solid var(--fg)}
 .hero .wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:center;padding-block:72px 88px}
 .hero .copy{display:flex;flex-direction:column;gap:26px;align-items:flex-start}
@@ -225,6 +226,7 @@ footer .wrap{display:flex;gap:24px;flex-wrap:wrap;align-items:center;justify-con
 }
 @supports (animation-timeline: view()) {
   @media (prefers-reduced-motion: no-preference) and (max-width:900px){
+    .stage{height:300vh}
     .caps{min-height:210px}
     .graph{max-height:calc(100svh - 330px);margin-inline:auto}
     .caps .q{display:none}
@@ -243,3 +245,16 @@ footer .wrap{display:flex;gap:24px;flex-wrap:wrap;align-items:center;justify-con
 .theme-t .sun{display:none}
 :root[data-theme="dark"] .theme-t .sun{display:block}
 :root[data-theme="dark"] .theme-t .moon{display:none}
+
+.gfig{contain:layout paint}
+
+/* Cabecera compacta en móvil: una fila de marca y acciones, y los enlaces en una fila que se desliza */
+@media (max-width:900px){
+  .top .wrap{gap:0 12px;padding-block:6px}
+  .top .stat{display:none}
+  .top .navcta{margin-left:auto;order:2}
+  .top .theme-t{order:3}
+  .top nav{order:4;width:100%;margin-left:0;flex-wrap:nowrap;gap:20px;overflow-x:auto;white-space:nowrap;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .top nav::-webkit-scrollbar{display:none}
+  .top nav a{flex:none}
+}

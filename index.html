@@ -8,7 +8,8 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&family=JetBrains+Mono:wght@400;500&family=Instrument+Serif:ital@1&family=Silkscreen:wght@400;700&display=swap">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=JetBrains+Mono:wght@400;500&family=Instrument+Serif:ital@1&family=Silkscreen:wght@400;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=JetBrains+Mono:wght@400;500&family=Instrument+Serif:ital@1&family=Silkscreen:wght@400;700&display=swap"></noscript>
 <link rel="stylesheet" href="styles.css">
 <script>
 try{var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}
@@ -78,7 +79,7 @@ try{var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.s
       <div class="win">
         <header><span>JARDIN_DIGITAL.EXE</span><i></i><u aria-hidden="true"><svg width="10" height="10" viewBox="0 0 10 10"><path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.6"/></svg></u></header>
         <div class="body shot">
-          <img src="img/jardin.jpg" width="1700" height="1328" alt="Captura de la app: vista Jardín con nodos de concepto y fuente conectados por afinidad, y un aviso con las preguntas de seguimiento">
+          <img src="img/jardin.jpg" srcset="img/jardin-1100.webp 1100w, img/jardin.webp 1700w" sizes="(max-width:900px) 92vw, 640px" width="1700" height="1328" decoding="async" fetchpriority="high" alt="Captura de la app: vista Jardín con nodos de concepto y fuente conectados por afinidad, y un aviso con las preguntas de seguimiento">
           <span class="pin" style="left:55.5%;top:21%" aria-hidden="true">A</span>
           <span class="pin" style="left:50%;top:69.5%" aria-hidden="true">B</span>
           <span class="pin" style="left:23.8%;top:77%" aria-hidden="true">C</span>
@@ -163,7 +164,7 @@ try{var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.s
         <figure class="crop">
           <div class="win">
             <header><span>PREGUNTAS.EXE</span><i></i></header>
-            <div class="body shot"><img src="img/banner.jpg" width="1700" height="130" alt="Captura real: aviso Datos insuficientes con dos preguntas de seguimiento"></div>
+            <div class="body shot"><img src="img/banner.jpg" srcset="img/banner-1100.webp 1100w, img/banner.webp 1700w" sizes="(max-width:900px) 92vw, 600px" width="1700" height="130" decoding="async" loading="lazy" alt="Captura real: aviso Datos insuficientes con dos preguntas de seguimiento"></div>
           </div>
           <figcaption class="cap">LOS HUECOS DEL MARCO SE CONVIERTEN EN PREGUNTAS DE SEGUIMIENTO. SOLO APARECEN CUANDO LA ENTRADA ES VAGA.</figcaption>
         </figure>
@@ -186,7 +187,7 @@ try{var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.s
     <figure class="crop">
       <div class="win">
         <header><span>LINAJE.EXE</span><i></i><u aria-hidden="true"><svg width="10" height="10" viewBox="0 0 10 10"><path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.6"/></svg></u></header>
-        <div class="body shot"><img src="img/linaje.jpg" width="1700" height="701" alt="Captura real: vista Linaje con la línea de tiempo desde el usuario hasta la inflexión, y las fuentes y conceptos por generación"></div>
+        <div class="body shot"><img src="img/linaje.jpg" srcset="img/linaje-1100.webp 1100w, img/linaje.webp 1700w" sizes="(max-width:1200px) 92vw, 1170px" width="1700" height="701" decoding="async" loading="lazy" alt="Captura real: vista Linaje con la línea de tiempo desde el usuario hasta la inflexión, y las fuentes y conceptos por generación"></div>
       </div>
       <figcaption class="cap">VISTA LINAJE · DE TI HACIA LA INFLEXIÓN. EL ROMBO MARCA EL PUNTO DONDE LA IDEA CAMBIÓ DE DIRECCIÓN.</figcaption>
     </figure>
@@ -240,7 +241,7 @@ try{var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.s
       <figure class="crop" style="max-width:420px;justify-self:center;width:100%">
         <div class="win">
           <header><span>NODO_C-07.EXE</span><i></i></header>
-          <div class="body shot"><img src="img/panel.jpg" width="660" height="640" alt="Captura real: panel de detalle del nodo Tarjetas de estudio con las etiquetas sugerido y De tu memoria"></div>
+          <div class="body shot"><img src="img/panel.jpg" srcset="img/panel.webp 660w" sizes="(max-width:900px) 92vw, 420px" width="660" height="640" decoding="async" loading="lazy" alt="Captura real: panel de detalle del nodo Tarjetas de estudio con las etiquetas sugerido y De tu memoria"></div>
         </div>
         <figcaption class="cap">EL CHIP “DE TU MEMORIA” MARCA UN NODO RECUPERADO DE OTRA SESIÓN. TAMBIÉN SE LISTAN SUS RELACIONES SEMÁNTICAS.</figcaption>
       </figure>
@@ -288,7 +289,7 @@ try{var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.s
       <figure class="crop">
         <div class="win" style="background:#111827;color:#F9FEFD;border-color:#F9FEFD;box-shadow:6px 6px 0 #00B5F8">
           <header style="border-color:#F9FEFD"><span>AJUSTES.EXE</span><i style="background:repeating-linear-gradient(to bottom,#F9FEFD 0 2px,transparent 2px 4px)"></i></header>
-          <div class="body shot"><img src="img/ajustes.jpg" width="1520" height="500" alt="Captura real de los ajustes: proveedores Gemini y OpenAI sin clave y el interruptor Memoria encendido"></div>
+          <div class="body shot"><img src="img/ajustes.jpg" srcset="img/ajustes-1100.webp 1100w, img/ajustes.webp 1520w" sizes="(max-width:900px) 92vw, 560px" width="1520" height="500" decoding="async" loading="lazy" alt="Captura real de los ajustes: proveedores Gemini y OpenAI sin clave y el interruptor Memoria encendido"></div>
         </div>
         <figcaption class="cap">AJUSTES · INTERRUPTOR “MEMORIA (USA TUS SESIONES PASADAS)”. ENCENDIDO POR DEFECTO.</figcaption>
       </figure>
