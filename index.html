@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genealogía Creativa</title>
+<meta name="description" content="Genealogía Creativa convierte una idea vaga en un grafo con ontología y memoria local. Producto del laboratorio de Wantalyze.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&family=JetBrains+Mono:wght@400;500&family=Instrument+Serif:ital@1&family=Silkscreen:wght@400;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>
+try{var t=localStorage.getItem("theme");if(t==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}
+</script>
+</head>
+<body>
+<div class="prog" aria-hidden="true"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="cubo" viewBox="-120 -128 240 240">
+      <g stroke-width="3.5" stroke-linejoin="round">
+        <polygon points="0,-94 69.3,-54 0,-14 -69.3,-54" fill="var(--lg-top)" stroke="var(--lg-top)"/>
+        <polygon points="-86.6,-50 -63.2,-36.5 -63.2,63.5 -86.6,50" fill="var(--lg-l1)" stroke="var(--lg-l1)"/>
+        <polygon points="-63.2,63.5 0,14 0,49.3 -37.2,78.5" fill="var(--lg-l2)" stroke="var(--lg-l2)"/>
+        <polygon points="63.2,63.5 0,14 0,49.3 37.2,78.5" fill="var(--lg-r2)" stroke="var(--lg-r2)"/>
+        <polygon points="86.6,-50 63.2,-36.5 63.2,63.5 86.6,50" fill="var(--lg-r1)" stroke="var(--lg-r1)"/>
+      </g>
+    </symbol>
+    <symbol id="flecha" viewBox="0 0 14 10"><path d="M1 5H12M8 1.5L12 5L8 8.5" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="estrella" viewBox="0 0 16 16"><path d="M8 0Q9 7 16 8Q9 9 8 16Q7 9 0 8Q7 7 8 0Z" fill="currentColor"/></symbol>
+    <symbol id="check" viewBox="0 0 14 14"><path d="M2 7.5L5.5 11L12 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Wantalyze, Genealogía Creativa">
+      <svg aria-hidden="true"><use href="#cubo" width="100%" height="100%"/></svg>
+      <b>WANTALYZE</b>
+    </a>
+    <span class="stat"><svg class="i" width="8" height="8" viewBox="0 0 8 8" aria-hidden="true"><circle cx="4" cy="4" r="4" fill="#00B5F8"/></svg>LAB // ONLINE</span>
+    <button class="theme-t" type="button" id="theme-t" aria-pressed="false" aria-label="Cambiar a modo oscuro">
+      <svg class="moon" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M15 10.5A6.5 6.5 0 0 1 7.5 3a6.5 6.5 0 1 0 7.5 7.5Z" fill="currentColor"/></svg>
+      <svg class="sun" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><circle cx="9" cy="9" r="3.4" fill="currentColor"/><path d="M9 1v2.4M9 14.6V17M1 9h2.4M14.6 9H17M3.3 3.3L5 5M13 13l1.7 1.7M14.7 3.3L13 5M5 13l-1.7 1.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+    <a class="btn p sm navcta" href="#empezar">Probarla</a>
+    <nav aria-label="Secciones">
+      <a href="#want">[ 01 ] Want</a>
+      <a href="#analyze">[ 02 ] Analyze</a>
+      <a href="#build">[ 03 ] Build</a>
+      <a href="#empezar">[ 04 ] Empezar</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero bp">
+  <span class="vert" aria-hidden="true">設計 · SERIE 01 · LAB / PRODUCTO 02</span>
+  <div class="wrap">
+    <div class="copy">
+      <span class="lab">[ LAB / PRODUCTO_02 ] // GENEALOGÍA CREATIVA</span>
+      <h1>De una idea <em class="s">vaga</em> a un árbol con memoria.</h1>
+      <p class="lead">Escribes una frase. La app te devuelve de dónde puede venir tu idea, qué le falta y qué ya habías pensado en otras sesiones. Para dejar de empezar de cero.</p>
+      <div class="cta">
+        <a class="btn p" href="#empezar">Probarla en local<svg class="i" width="14" height="10" aria-hidden="true"><use href="#flecha"/></svg></a>
+        <a class="btn" href="https://github.com/JuanCamCVillada/Creas" rel="noopener">Ver el código</a>
+      </div>
+      <div class="meta">
+        <span>Estado <b>Prototipo</b></span>
+        <span>Stack <b>Flutter · Dart</b></span>
+        <span>Pruebas <b>339 automáticas</b></span>
+        <span>Sede <b>06.24°N · 75.58°W</b></span>
+      </div>
+    </div>
+
+    <figure class="crop">
+      <div class="win">
+        <header><span>JARDIN_DIGITAL.EXE</span><i></i><u aria-hidden="true"><svg width="10" height="10" viewBox="0 0 10 10"><path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.6"/></svg></u></header>
+        <div class="body shot">
+          <img src="img/jardin.jpg" width="1700" height="1328" alt="Captura de la app: vista Jardín con nodos de concepto y fuente conectados por afinidad, y un aviso con las preguntas de seguimiento">
+          <span class="pin" style="left:55.5%;top:21%" aria-hidden="true">A</span>
+          <span class="pin" style="left:50%;top:69.5%" aria-hidden="true">B</span>
+          <span class="pin" style="left:23.8%;top:77%" aria-hidden="true">C</span>
+        </div>
+      </div>
+      <ul class="keys">
+        <li><span class="pin" aria-hidden="true">A</span><span>Borde punteado: lo sugirió el modelo. Lo que escribiste va con borde sólido.</span></li>
+        <li><span class="pin" aria-hidden="true">B</span><span>Nodo de concepto, con su tipo y su dominio.</span></li>
+        <li><span class="pin" aria-hidden="true">C</span><span>Hexágono: una fuente (libro, persona, observación).</span></li>
+      </ul>
+      <figcaption class="cap">CAPTURA REAL DE LA APP · LA SESIÓN DE EJEMPLO SE CARGÓ A MANO PARA ESTA PÁGINA. NO ES UNA SALIDA REAL DE UN MODELO.</figcaption>
+    </figure>
+  </div>
+</div>
+
+<section class="stage-sec" id="grafo" aria-labelledby="grafo-t">
+  <div class="stage">
+    <div class="stage-in">
+      <div class="seg-bar" aria-hidden="true">
+        <span class="seg"><i style="--a:0%;--b:30%"></i><b>WANT</b></span>
+        <span class="seg"><i style="--a:30%;--b:70%"></i><b>ANALYZE</b></span>
+        <span class="seg"><i style="--a:70%;--b:100%"></i><b>BUILD</b></span>
+      </div>
+      <div class="stage-grid">
+        <div class="caps">
+          <h2 id="grafo-t" class="sr">Cómo se construye un grafo</h2>
+          <article class="cap-a" style="--a:0%;--b:30%">
+            <span class="lab">[ 01 ] WANT · LO HUMANO</span>
+            <p class="note">“Quiero una app que me ayude a no olvidar lo que leo.”</p>
+            <p>Tú pones la frase y lo que ya sabes. Eso es lo único que lleva borde sólido.</p>
+            <p class="q">¿Estudias con apuntes propios o con material que te dan?</p>
+          </article>
+          <article class="cap-b" style="--a:30%;--b:70%">
+            <span class="lab">[ 02 ] ANALYZE · LO TÉCNICO</span>
+            <h3>El modelo completa el marco y sugiere nodos</h3>
+            <p>Cada uno trae tipo, dominio y confianza. Borde punteado: lo sugirió el modelo. Hexágono: una fuente. Las relaciones se dibujan aparte del linaje.</p>
+          </article>
+          <article class="cap-c" style="--a:70%;--b:100%">
+            <span class="lab">[ 03 ] BUILD · LO CONSTRUIDO</span>
+            <h3>Tu sesión anterior entra al grafo</h3>
+            <p>“Tarjetas de estudio” vino de otra sesión. Se marca como sugerido, con su referencia, y tú decides si se queda.</p>
+          </article>
+        </div>
+        <div class="gfig">
+          <svg class="graph" viewBox="0 0 600 600" role="img" aria-label="Grafo de ejemplo que se construye al bajar: una idea, sus fuentes, nodos sugeridos, relaciones y un nodo recuperado de una sesión anterior"><path class="ed draw" pathLength="1" style="--a:12%;--b:20%" d="M95 148L95 292"/><path class="ed draw" pathLength="1" style="--a:40%;--b:48%" d="M123 320C197.5 320 197.5 120 272 120"/><path class="ed draw" pathLength="1" style="--a:38%;--b:46%" d="M123 520C182.6 520 212.4 120 272 120"/><path class="ed draw" pathLength="1" style="--a:56%;--b:62%" d="M328 120C402.5 120 402.5 300 477 300"/><path class="ed draw" pathLength="1" style="--a:58%;--b:64%" d="M328 270C402.5 270 402.5 300 477 300"/><path class="ed draw" pathLength="1" style="--a:82%;--b:88%" d="M505 148L505 272"/><path class="ed draw" pathLength="1" style="--a:64%;--b:70%" d="M505 328L505 452"/><path class="ed sem fade" style="--a:66%;--b:72%" d="M477 300C420 330 380 380 328 420"/><text class="rel fade" style="--a:66%;--b:72%" x="408" y="414" text-anchor="middle">depende_de</text><path class="ed sem fade" style="--a:86%;--b:92%" d="M477 120H328"/><text class="rel fade" style="--a:86%;--b:92%" x="402" y="108" text-anchor="middle">instancia_de</text><g transform="translate(95 120)"><g class="nd u pop" style="--a:2%;--b:8%"><polygon class="sh" points="32.0,0.0 16.0,27.7 -16.0,27.7 -32.0,0.0 -16.0,-27.7 16.0,-27.7"/><text class="kind" y="-42" text-anchor="middle">OBSERVACIÓN</text><text class="lb" y="52" text-anchor="middle"><tspan x="0" dy="0">Releo y no</tspan><tspan x="0" dy="22">recuerdo</tspan></text></g></g><g transform="translate(95 320)"><g class="nd u pop" style="--a:8%;--b:14%"><circle class="sh" r="28"/><text class="kind" y="-42" text-anchor="middle">IDEA</text><text class="lb" y="52" text-anchor="middle"><tspan x="0" dy="0">App para no</tspan><tspan x="0" dy="22">olvidar lo leído</tspan></text></g></g><g transform="translate(95 520)"><g class="nd s pop" style="--a:32%;--b:37%"><polygon class="sh" points="32.0,0.0 16.0,27.7 -16.0,27.7 -32.0,0.0 -16.0,-27.7 16.0,-27.7"/><text class="kind" y="-42" text-anchor="middle">RECURSO</text><text class="lb" y="52" text-anchor="middle"><tspan x="0" dy="0">Curva del olvido</tspan><tspan x="0" dy="22">(Ebbinghaus)</tspan></text></g></g><g transform="translate(300 120)"><g class="nd s pop" style="--a:36%;--b:41%"><circle class="sh" r="28"/><text class="kind" y="-42" text-anchor="middle">TÉCNICA</text><text class="lb" y="52" text-anchor="middle"><tspan x="0" dy="0">Repetición</tspan><tspan x="0" dy="22">espaciada</tspan></text></g></g><g transform="translate(300 270)"><g class="nd s pop" style="--a:40%;--b:45%"><circle class="sh" r="28"/><text class="kind" y="-42" text-anchor="middle">HIPÓTESIS</text><text class="lb" y="52" text-anchor="middle"><tspan x="0" dy="0">Preguntar rinde</tspan><tspan x="0" dy="22">más que releer</tspan></text></g></g><g transform="translate(300 420)"><g class="nd s pop" style="--a:44%;--b:49%"><circle class="sh" r="28"/><text class="kind" y="-42" text-anchor="middle">RESTRICCIÓN</text><text class="lb" y="52" text-anchor="middle"><tspan x="0" dy="0">Cinco minutos</tspan><tspan x="0" dy="22">al día</tspan></text></g></g><g transform="translate(505 300)"><g class="nd s pop" style="--a:54%;--b:59%"><circle class="sh" r="28"/><text class="kind" y="-42" text-anchor="middle">DECISIÓN</text><text class="lb" y="52" text-anchor="middle"><tspan x="0" dy="0">Preguntas desde</tspan><tspan x="0" dy="22">tus notas</tspan></text></g></g><g transform="translate(505 480)"><g class="nd s pop" style="--a:62%;--b:67%"><circle class="sh" r="28"/><text class="kind" y="-42" text-anchor="middle">RESULTADO</text><text class="lb" y="52" text-anchor="middle"><tspan x="0" dy="0">Retención</tspan><tspan x="0" dy="22">por tema</tspan></text></g></g><g transform="translate(505 120)"><g class="nd m pop" style="--a:76%;--b:82%"><circle class="sh" r="28"/><text class="kind" y="-42" text-anchor="middle">DE TU MEMORIA</text><text class="lb" y="52" text-anchor="middle"><tspan x="0" dy="0">Tarjetas</tspan><tspan x="0" dy="22">de estudio</tspan></text></g></g></svg>
+          <ul class="legend" aria-hidden="true">
+            <li><i class="k u"></i>Tú</li><li><i class="k s"></i>Sugerido</li><li><i class="k m"></i>De tu memoria</li>
+          </ul>
+        </div>
+      </div>
+      <p class="cap stage-note">EJEMPLO ILUSTRATIVO ESCRITO A MANO. NO ES SALIDA DE UN MODELO.</p>
+    </div>
+  </div>
+</section>
+
+<section id="want">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="lab">[ 01 ] WANT · LO HUMANO</span>
+      <h2>Con una frase corta ya alcanza para <em class="s">empezar</em></h2>
+      <p class="lead">Si escribes menos de 60 palabras, el modelo completa primero un marco de tu idea. Lo que no puede saber, te lo pregunta.</p>
+    </div>
+    <div class="split">
+      <div class="col">
+        <p class="note">“Quiero una app que me ayude a no olvidar lo que leo.”</p>
+        <div class="win">
+          <header><span>IDEA_FRAME.JSON</span><i></i></header>
+          <div class="card" style="border:0;border-radius:0;background:var(--bg)">
+            <span class="lab">Marco que se rellena primero · ejemplo</span>
+            <dl class="fr">
+              <dt>Problema</dt><dd>Se lee mucho y se retiene poco</dd>
+              <dt>Dominio</dt><dd>Educación</dd>
+              <dt>Actores</dt><dd>Estudiantes universitarios</dd>
+              <dt>Restricciones</dt><dd>Poco tiempo, sin disciplina diaria</dd>
+              <dt>Analogías</dt><dd>Repetición espaciada</dd>
+              <dt>Precedentes</dt><dd>Anki, resúmenes automáticos</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <figure class="crop">
+          <div class="win">
+            <header><span>PREGUNTAS.EXE</span><i></i></header>
+            <div class="body shot"><img src="img/banner.jpg" width="1700" height="130" alt="Captura real: aviso Datos insuficientes con dos preguntas de seguimiento"></div>
+          </div>
+          <figcaption class="cap">LOS HUECOS DEL MARCO SE CONVIERTEN EN PREGUNTAS DE SEGUIMIENTO. SOLO APARECEN CUANDO LA ENTRADA ES VAGA.</figcaption>
+        </figure>
+        <div class="g3 rv">
+          <div class="card"><span class="lab">// Una llamada</span><p>El marco viaja en el mismo envío que el grafo. No hay una segunda pasada que duplique coste y espera.</p></div>
+          <div class="card"><span class="lab">// Hasta 6 nodos</span><p>Cada nodo que añade el modelo va como sugerido y con su confianza. Nada sugerido se hace pasar por tuyo.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="analyze" class="tint bp">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="lab">[ 02 ] ANALYZE · LO TÉCNICO</span>
+      <h2>Cada nodo sabe <em class="s">qué es</em></h2>
+      <p class="lead">Un grafo con tipos permite preguntar de dónde viene una idea, qué la contradice y qué la resuelve.</p>
+    </div>
+    <figure class="crop">
+      <div class="win">
+        <header><span>LINAJE.EXE</span><i></i><u aria-hidden="true"><svg width="10" height="10" viewBox="0 0 10 10"><path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.6"/></svg></u></header>
+        <div class="body shot"><img src="img/linaje.jpg" width="1700" height="701" alt="Captura real: vista Linaje con la línea de tiempo desde el usuario hasta la inflexión, y las fuentes y conceptos por generación"></div>
+      </div>
+      <figcaption class="cap">VISTA LINAJE · DE TI HACIA LA INFLEXIÓN. EL ROMBO MARCA EL PUNTO DONDE LA IDEA CAMBIÓ DE DIRECCIÓN.</figcaption>
+    </figure>
+    <div class="g3" style="margin-top:56px">
+      <div class="card">
+        <h3>Fuentes</h3><p>De dónde sale lo que sabes.</p>
+        <div class="chips"><span class="chip">libro</span><span class="chip">persona</span><span class="chip">observación</span><span class="chip">problema</span><span class="chip">conversación</span><span class="chip">recurso</span></div>
+      </div>
+      <div class="card">
+        <h3>Conceptos</h3><p>Lo que construyes a partir de ellas.</p>
+        <div class="chips"><span class="chip d">idea</span><span class="chip d">hipótesis</span><span class="chip d">decisión</span><span class="chip d">técnica</span><span class="chip d">restricción</span><span class="chip d">resultado</span></div>
+      </div>
+      <div class="card">
+        <h3>16 dominios</h3><p>Los temas se normalizan: “software” y “programación” acaban en el mismo cluster, arquitectura-software.</p>
+      </div>
+    </div>
+    <div class="card" style="margin-top:20px">
+      <span class="lab">// Relaciones semánticas, separadas del linaje</span>
+      <ul class="rel">
+        <li><b>contradice</b><span>una hipótesis choca con una observación</span></li>
+        <li><b>resuelve</b><span>una técnica ataca un problema</span></li>
+        <li><b>depende_de</b><span>una decisión necesita una restricción resuelta</span></li>
+        <li><b>analogo_a</b><span>dos ideas comparten estructura en dominios distintos</span></li>
+        <li><b>instancia_de</b><span>un caso concreto de una idea general</span></li>
+      </ul>
+      <p>Cada una tiene reglas de qué tipo puede apuntar a cuál. Las que no cumplen se descartan, y el árbol de herencia sigue sin ciclos.</p>
+    </div>
+  </div>
+</section>
+
+<section id="build">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="lab">[ 03 ] BUILD · LO CONSTRUIDO</span>
+      <h2>Tu segunda sesión empieza donde terminó la <em class="s">primera</em></h2>
+      <p class="lead">Los nodos de tus sesiones guardadas se indexan como vectores en tu navegador. Al generar, la app recupera lo relevante y se lo pasa al modelo.</p>
+    </div>
+    <div class="split r">
+      <div class="col">
+        <div class="flow rv">
+          <div><span class="lab">1 · Indexar</span><h3>Embeddings</h3><p>Cada nodo pasa a un vector de 256 dimensiones, con tu clave de Gemini u OpenAI.</p></div>
+          <div><span class="lab">2 · Local</span><h3>Nodos y vecinos</h3><p>Los más parecidos a tu idea, más lo que tienen conectado.</p></div>
+          <div><span class="lab">3 · Global</span><h3>Temas</h3><p>Un resumen por comunidad de cada sesión, para ver el panorama.</p></div>
+          <div><span class="lab">4 · Generar</span><h3>Con contexto</h3><p>Hasta 1800 caracteres de memoria entran al prompt, cada línea con su referencia.</p></div>
+        </div>
+        <div class="honest">
+          <svg class="i" width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="12" fill="none" stroke="#00B5F8" stroke-width="2"/><path d="M9.5 15.5L13.5 19.5L20.5 11" fill="none" stroke="#00B5F8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><span class="lab">// Regla de honestidad</span><p style="margin-top:6px">Un nodo que viene de la memoria siempre se marca como sugerido y apunta a su sesión de origen. Si el modelo cita una referencia que no se recuperó, se descarta.</p></div>
+        </div>
+      </div>
+      <figure class="crop" style="max-width:420px;justify-self:center;width:100%">
+        <div class="win">
+          <header><span>NODO_C-07.EXE</span><i></i></header>
+          <div class="body shot"><img src="img/panel.jpg" width="660" height="640" alt="Captura real: panel de detalle del nodo Tarjetas de estudio con las etiquetas sugerido y De tu memoria"></div>
+        </div>
+        <figcaption class="cap">EL CHIP “DE TU MEMORIA” MARCA UN NODO RECUPERADO DE OTRA SESIÓN. TAMBIÉN SE LISTAN SUS RELACIONES SEMÁNTICAS.</figcaption>
+      </figure>
+    </div>
+
+    <div class="stats rv" style="margin-top:72px">
+      <div><strong>9</strong><span>Nodos</span></div>
+      <div><strong>7</strong><span>Aristas</span></div>
+      <div><strong>5</strong><span>Generaciones</span></div>
+      <div><strong>1</strong><span>Inflexión</span></div>
+    </div>
+    <p class="cap">LAS CIFRAS SON LAS QUE MUESTRA LA APP PARA LA SESIÓN DE EJEMPLO DE ARRIBA.</p>
+  </div>
+</section>
+
+<div class="cosmos">
+<section>
+  <div class="wrap">
+    <div class="head rv">
+      <span class="lab">[ 03.1 ] PRIVACIDAD</span>
+      <h2>Tus ideas se quedan en tu <em class="s" style="color:var(--w-glow)">navegador</em></h2>
+      <p class="lead">Sin servidor propio. El índice vive en el almacenamiento local, y tú decides si la memoria está encendida.</p>
+    </div>
+    <div class="wrapx">
+      <div class="col">
+        <p>Los embeddings van al mismo proveedor que ya recibe tu idea, con tus mismas claves. Con el interruptor apagado no se recupera ni se indexa nada, y no se envía texto de tus nodos.</p>
+        <p>Si la memoria falla o tarda más de 5 segundos, la generación sigue sin ella. Nunca se queda esperando.</p>
+        <svg class="atom" style="overflow:visible" viewBox="-130 -100 260 200" role="img" aria-label="Isotipo atómico de Wantalyze" style="margin-top:12px">
+          <g class="spin"><ellipse rx="128" ry="48.6" transform="rotate(30)" fill="none" stroke="#62CFFE" stroke-width="4.5"/>
+          <ellipse rx="128" ry="48.6" transform="rotate(-30)" fill="none" stroke="#62CFFE" stroke-width="4.5" stroke-dasharray="0.1 9" stroke-linecap="round"/></g>
+          <g transform="scale(0.72) translate(0,8)" stroke-linejoin="round">
+            <polygon points="-86.6,-50 0,-94 86.6,-50 86.6,50 37.2,78.5 -37.2,78.5 -86.6,50" fill="#111827" stroke="#111827" stroke-width="23.5"/>
+            <g stroke-width="3.5">
+              <polygon points="0,-94 69.3,-54 0,-14 -69.3,-54" fill="#00B5F8" stroke="#00B5F8"/>
+              <polygon points="-86.6,-50 -63.2,-36.5 -63.2,63.5 -86.6,50" fill="#00B5F8" stroke="#00B5F8"/>
+              <polygon points="-63.2,63.5 0,14 0,49.3 -37.2,78.5" fill="#F9FEFD" stroke="#F9FEFD"/>
+              <polygon points="63.2,63.5 0,14 0,49.3 37.2,78.5" fill="#00B5F8" stroke="#00B5F8"/>
+              <polygon points="86.6,-50 63.2,-36.5 63.2,63.5 86.6,50" fill="#F9FEFD" stroke="#F9FEFD"/>
+            </g>
+          </g>
+          <circle cx="89.9" cy="75.8" r="12.5" fill="#111827"/>
+          <polygon points="89.9,61.3 93.7,72.1 104.4,75.8 93.7,79.6 89.9,90.3 86.2,79.6 75.4,75.8 86.2,72.1" fill="#00B5F8"/>
+        </svg>
+      </div>
+      <figure class="crop">
+        <div class="win" style="background:#111827;color:#F9FEFD;border-color:#F9FEFD;box-shadow:6px 6px 0 #00B5F8">
+          <header style="border-color:#F9FEFD"><span>AJUSTES.EXE</span><i style="background:repeating-linear-gradient(to bottom,#F9FEFD 0 2px,transparent 2px 4px)"></i></header>
+          <div class="body shot"><img src="img/ajustes.jpg" width="1520" height="500" alt="Captura real de los ajustes: proveedores Gemini y OpenAI sin clave y el interruptor Memoria encendido"></div>
+        </div>
+        <figcaption class="cap">AJUSTES · INTERRUPTOR “MEMORIA (USA TUS SESIONES PASADAS)”. ENCENDIDO POR DEFECTO.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+</div>
+
+<section id="lab">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="lab">[ 03.2 ] LAB // FACTORY</span>
+      <h2>Probado en casa <em class="s">primero</em></h2>
+      <p class="lead">Genealogía Creativa es un producto del laboratorio de Wantalyze. Experimentamos con nuestros productos, no con tu proyecto.</p>
+    </div>
+    <div class="g3 rv">
+      <div class="card"><span class="lab">LAB</span><h3>Aquí se prueba</h3><p>Ontologías, embeddings y GraphRAG se probaron primero en este prototipo, con 339 pruebas automáticas.</p></div>
+      <div class="card"><span class="lab">VALIDACIÓN</span><h3>Si funciona, se queda</h3><p>Solo pasa a un proyecto de cliente lo que ahorró tiempo o mejoró la calidad de verdad.</p></div>
+      <div class="card"><span class="lab">FACTORY</span><h3>Y entonces se entrega</h3><p>Lo validado se documenta como práctica del estudio y se usa con tecnología actual y ya probada.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="primera">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="lab">[ 03.3 ] TU PRIMERA SESIÓN</span>
+      <h2>Tres pasos y ya ves tu idea en <em class="s">nodos</em></h2>
+      <p class="lead">El primer momento de valor es ver tu frase convertida en un grafo. La segunda sesión ya parte de la primera.</p>
+    </div>
+    <div class="g3 rv">
+      <div class="card"><span class="lab">PASO 01</span><h3>Pega tu clave</h3><p>De Gemini o de OpenAI. Se guarda en el almacenamiento seguro de tu navegador.</p></div>
+      <div class="card"><span class="lab">PASO 02</span><h3>Escribe una frase</h3><p>Con una línea basta. Si es vaga, la app te hace preguntas de seguimiento.</p></div>
+      <div class="card"><span class="lab">PASO 03</span><h3>Acepta o rechaza</h3><p>Cada nodo sugerido tiene su marca para aceptarlo o rechazarlo. Tú mandas.</p></div>
+    </div>
+    <div class="cta" style="margin-top:40px">
+      <a class="btn p" href="#empezar">Empezar ahora<svg class="i" width="14" height="10" aria-hidden="true"><use href="#flecha"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section id="empezar" class="tint bp" style="border-bottom:0">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="lab">[ 04 ] EMPEZAR</span>
+      <h2>Pruébala en tu <em class="s">máquina</em></h2>
+      <p class="lead">Es una app Flutter con versión web. Necesitas Flutter instalado y una clave de Gemini u OpenAI.</p>
+    </div>
+    <div class="wrapx" style="align-items:start">
+      <div class="win">
+        <header><span>TERMINAL.EXE</span><i></i></header>
+<pre>git clone https://github.com/JuanCamCVillada/Creas.git
+cd Creas
+flutter pub get
+flutter run -d web-server --web-port 8765</pre>
+      </div>
+      <div class="col">
+        <p>Abre <span style="font-family:var(--f-mono)">localhost</span>, pega tu clave en Ajustes y escribe tu primera idea. Tus claves se guardan en el almacenamiento seguro de tu navegador.</p>
+        <div class="cta">
+          <a class="btn p" href="https://github.com/JuanCamCVillada/Creas" rel="noopener">Ir al repositorio<svg class="i" width="14" height="10" aria-hidden="true"><use href="#flecha"/></svg></a>
+        </div>
+        <p class="cap" style="margin:0">¿Un proyecto parecido? Escribe a wantalyze@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Wantalyze">
+      <svg aria-hidden="true"><use href="#cubo" width="100%" height="100%"/></svg>
+      <span><b>WANTALYZE</b><br><span class="motto">Want it. Analyze it. Build it.</span></span>
+    </a>
+    <span class="motto">Fin de transmisión · © 2026 · 06.24°N · 75.58°W</span>
+  </div>
+</footer>
+<script>
+(function(){var b=document.getElementById("theme-t"),r=document.documentElement;
+function sync(){var d=r.getAttribute("data-theme")==="dark";b.setAttribute("aria-pressed",d);b.setAttribute("aria-label",d?"Cambiar a modo claro":"Cambiar a modo oscuro")}
+b.addEventListener("click",function(){var d=r.getAttribute("data-theme")==="dark";
+ if(d)r.removeAttribute("data-theme");else r.setAttribute("data-theme","dark");
+ try{localStorage.setItem("theme",d?"light":"dark")}catch(e){}sync()});sync()})();
+</script>
+</body>
+</html>
