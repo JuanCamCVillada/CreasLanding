@@ -5,14 +5,14 @@ Página estática: `index.html` + `styles.css`, sin framework ni paso de compila
 ## Ver en local
 
 ```bash
-python3 -m http.server 8080 -d landing
+python3 -m http.server 8080
 ```
 
 Abre http://localhost:8080.
 
 ## Publicar
 
-Cualquier hosting estático sirve: Cloudflare Pages, Netlify o GitHub Pages. Directorio de salida: `landing/` (sin comando de build).
+Cualquier hosting estático sirve: Cloudflare Pages, Netlify o GitHub Pages. Directorio de salida: la raíz del repo (sin comando de build).
 
 ## Contenido
 
